@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttii Birthday!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff6f61;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #555;
+        }
+        iframe {
+            margin-top: 20px;
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+        }
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 50px;
+            height: 70px;
+            background: radial-gradient(circle, #ff6f61 50%, #ff3d47 100%);
+            border-radius: 50%;
+            animation: floatUp 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+        .balloon:nth-child(2) {
+            left: 30%;
+            animation-delay: 1s;
+        }
+        .balloon:nth-child(3) {
+            left: 50%;
+            animation-delay: 2s;
+        }
+        .balloon:nth-child(4) {
+            left: 70%;
+            animation-delay: 3s;
+        }
+        .balloon:nth-child(5) {
+            left: 90%;
+            animation-delay: 4s;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-150vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <div class="container">
+        <h1>Happy Birthday Uttiiii!</h1>
+        <p>Hope your special day is as incredible as you are!</p>
+        <p>Wishing you a birthday filled with love, fun, and surprises!</p>
+        <p>May this day be as amazing as you are, and may it bring you everything you've been wishing for.</p>
+        <p>Sending you lots of love, good vibes, and all the best on your special day and always.</p>
+        <p>May this year bring you all the dreams and happiness you've been longing for!</p>
+        <iframe src="https://www.youtube.com/embed/-pHfPJGatgE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
